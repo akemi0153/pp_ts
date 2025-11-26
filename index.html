@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salinbanwa - Legal Pages</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .landing-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .landing-shapes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .landing-content {
+            max-width: 800px;
+            text-align: center;
+            background: white;
+            padding: 4rem 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .landing-logo {
+            margin-bottom: 2rem;
+        }
+
+        .landing-logo img {
+            height: 100px;
+            width: auto;
+        }
+
+        .landing-content h1 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .landing-content p {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .page-links {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-top: 2rem;
+        }
+
+        .page-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 2px solid #e9ecef;
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+        }
+
+        .page-link:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(45, 95, 127, 0.15);
+            border-color: var(--primary);
+        }
+
+        .page-link-content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .page-link-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .page-link-description {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+        }
+
+        .page-link-arrow {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-left: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .landing-content {
+                padding: 2.5rem 2rem;
+            }
+
+            .landing-content h1 {
+                font-size: 2rem;
+            }
+
+            .landing-content p {
+                font-size: 1rem;
+            }
+
+            .page-link {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .page-link-title {
+                font-size: 1.1rem;
+            }
+
+            .page-link-description {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="landing-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+
+        <div class="landing-content">
+            <div class="landing-logo">
+                <img src="bg-salinbanwa.png" alt="Salinbanwa Logo">
+            </div>
+
+            <h1>Salinbanwa Legal Pages</h1>
+            <p>Access our privacy policy, terms of service, and data deletion request form</p>
+
+            <div class="page-links">
+                <a href="privacy-policy.html" class="page-link">
+                    <div class="page-link-content">
+                        <div class="page-link-title">Privacy Policy</div>
+                        <div class="page-link-description">Learn how we collect, use, and protect your data</div>
+                    </div>
+                    <div class="page-link-arrow">→</div>
+                </a>
+
+                <a href="terms-of-service.html" class="page-link">
+                    <div class="page-link-content">
+                        <div class="page-link-title">Terms of Service</div>
+                        <div class="page-link-description">Read our terms and conditions for using Salinbanwa</div>
+                    </div>
+                    <div class="page-link-arrow">→</div>
+                </a>
+
+                <a href="data-deletion.html" class="page-link">
+                    <div class="page-link-content">
+                        <div class="page-link-title">Data Deletion Request</div>
+                        <div class="page-link-description">Request the deletion of your personal data</div>
+                    </div>
+                    <div class="page-link-arrow">→</div>
+                </a>
+            </div>
+
+            <p style="margin-top: 3rem; margin-bottom: 0; font-size: 0.9rem; color: var(--text-medium);">
+                <strong>Salinbanwa</strong> - Tradition meets innovation<br>
+                Open source translation system
+            </p>
+        </div>
+    </div>
+</body>
+</html>
