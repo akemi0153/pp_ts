@@ -5,6 +5,7 @@ Privacy Policy and Terms of Service pages for Salinbanwa, an open-source transla
 **🔗 View Pages:**
 - **[Privacy Policy](https://akemi0153.github.io/pp_ts/privacy-policy.html)**
 - **[Terms of Service](https://akemi0153.github.io/pp_ts/terms-of-service.html)**
+- **[Data Deletion Request](https://akemi0153.github.io/pp_ts/data-deletion.html)**
 
 ## Overview
 
@@ -33,12 +34,10 @@ Modern, clean legal pages featuring:
 - **Hover effects** on interactive elements
 
 ### Content Structure
-Both pages include comprehensive coverage of:
-- Data collection practices (Name, Email, Cookies)
-- Translation and text-to-speech service terms
-- User rights and responsibilities
-- Security measures
-- Contact information
+All pages include comprehensive coverage of:
+- **Privacy Policy:** Data collection practices, user rights, security measures
+- **Terms of Service:** Usage guidelines, user responsibilities, prohibited activities
+- **Data Deletion:** GDPR-compliant data deletion request form with email submission to salinbanwa@gmail.com
 
 ## Files
 
@@ -46,8 +45,10 @@ Both pages include comprehensive coverage of:
 |------|-------------|
 | `privacy-policy.html` | Privacy Policy page with data protection information |
 | `terms-of-service.html` | Terms of Service page with usage guidelines |
+| `data-deletion.html` | Data deletion request form page |
 | `styles.css` | Complete stylesheet with responsive design |
 | `script.js` | Interactive features and scroll animations |
+| `deletion-form.js` | Form handler for data deletion requests |
 | `bg-salinbanwa.png` | Salinbanwa logo |
 
 ## Quick Start
@@ -61,6 +62,7 @@ Both pages include comprehensive coverage of:
 Already configured! Pages are live at:
 - https://akemi0153.github.io/pp_ts/privacy-policy.html
 - https://akemi0153.github.io/pp_ts/terms-of-service.html
+- https://akemi0153.github.io/pp_ts/data-deletion.html
 
 ## Customization
 
@@ -100,6 +102,7 @@ Link directly from your main application:
 ```html
 <a href="https://akemi0153.github.io/pp_ts/privacy-policy.html">Privacy Policy</a>
 <a href="https://akemi0153.github.io/pp_ts/terms-of-service.html">Terms of Service</a>
+<a href="https://akemi0153.github.io/pp_ts/data-deletion.html">Delete My Data</a>
 ```
 
 ### In Your Project
