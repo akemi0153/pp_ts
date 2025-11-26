@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request - Salinbanwa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <img src="bg-salinbanwa.png" alt="Salinbanwa Logo" class="logo-img">
+                <div class="logo-text">
+                    <div class="logo-name">salinbanwa</div>
+                    <div class="logo-tagline">Tradition meets innovation</div>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="data-deletion.html" class="active">Data Deletion</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Data Deletion Request</h1>
+            <p>Request the deletion of your personal data from Salinbanwa</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Introduction Section -->
+        <section class="section">
+            <div class="section-number">01</div>
+            <h2>Your Right to Data Deletion</h2>
+            <p>Under data protection regulations, you have the right to request the deletion of your personal data. Fill out the form below to submit your request to our team.</p>
+            
+            <div class="important-notice">
+                <h3>⚠️ Important Information</h3>
+                <ul class="simple-list">
+                    <li>Deletion requests are typically processed within 30 days</li>
+                    <li>You will receive a confirmation email once your request is received</li>
+                    <li>Some data may be retained for legal or security purposes</li>
+                    <li>Deletion is permanent and cannot be undone</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Data Deletion Form Section -->
+        <section class="section">
+            <div class="section-number">02</div>
+            <h2>Submit Your Request</h2>
+            
+            <div class="deletion-form-container">
+                <form id="deletionForm" class="deletion-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            required 
+                            placeholder="Enter your full name"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            placeholder="Enter the email associated with your account"
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="accountType">Account Type <span class="required">*</span></label>
+                        <select id="accountType" name="accountType" required>
+                            <option value="">Select account type</option>
+                            <option value="user">User Account</option>
+                            <option value="contributor">Contributor Account</option>
+                            <option value="translator">Translator Account</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reason">Reason for Deletion (Optional)</label>
+                        <select id="reason" name="reason">
+                            <option value="">Select a reason</option>
+                            <option value="no-longer-using">No longer using the service</option>
+                            <option value="privacy-concerns">Privacy concerns</option>
+                            <option value="duplicate-account">Duplicate account</option>
+                            <option value="switching-service">Switching to another service</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="additionalInfo">Additional Information (Optional)</label>
+                        <textarea 
+                            id="additionalInfo" 
+                            name="additionalInfo" 
+                            rows="4" 
+                            placeholder="Provide any additional details that might help us process your request"
+                        ></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="confirmation" 
+                                name="confirmation" 
+                                required
+                            >
+                            <span>I understand that this action is permanent and cannot be undone <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input 
+                                type="checkbox" 
+                                id="identityConfirm" 
+                                name="identityConfirm" 
+                                required
+                            >
+                            <span>I confirm that I am the owner of this account <span class="required">*</span></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Submit Deletion Request</button>
+                </form>
+
+                <div id="formMessage" class="form-message" style="display: none;"></div>
+            </div>
+        </section>
+
+        <!-- What Gets Deleted Section -->
+        <section class="section">
+            <div class="section-number">03</div>
+            <h2>What Data Will Be Deleted</h2>
+            
+            <div class="data-cards">
+                <div class="data-card">
+                    <div class="card-icon">👤</div>
+                    <h3>Personal Information</h3>
+                    <ul class="simple-list">
+                        <li>Name and email address</li>
+                        <li>Profile information</li>
+                        <li>Account credentials</li>
+                        <li>User preferences</li>
+                    </ul>
+                </div>
+
+                <div class="data-card">
+                    <div class="card-icon">📝</div>
+                    <h3>Activity Data</h3>
+                    <ul class="simple-list">
+                        <li>Translation history</li>
+                        <li>Saved translations</li>
+                        <li>Usage statistics</li>
+                        <li>Custom dictionaries</li>
+                    </ul>
+                </div>
+
+                <div class="data-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Technical Data</h3>
+                    <ul class="simple-list">
+                        <li>Session information</li>
+                        <li>Device identifiers</li>
+                        <li>Cookies and cache</li>
+                        <li>API access tokens</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Retention Section -->
+        <section class="section">
+            <div class="section-number">04</div>
+            <h2>Data We May Retain</h2>
+            
+            <div class="important-notice">
+                <p>Certain data may be retained for legitimate purposes, including:</p>
+                <ul class="simple-list">
+                    <li><strong>Legal Compliance:</strong> Data required by law to be retained</li>
+                    <li><strong>Security:</strong> Records of security incidents and fraud prevention</li>
+                    <li><strong>Financial Records:</strong> Transaction history for accounting purposes</li>
+                    <li><strong>Backups:</strong> Data in backup systems (automatically deleted within 90 days)</li>
+                    <li><strong>Aggregated Data:</strong> Anonymous analytics that cannot identify you</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="section-number">05</div>
+            <h2>Need Help?</h2>
+            <p>If you have questions about data deletion or need assistance with your request, please contact us:</p>
+            
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:salinbanwa@gmail.com">salinbanwa@gmail.com</a></p>
+                <p><strong>Response Time:</strong> We typically respond within 2-3 business days</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Salinbanwa</h3>
+                <p>Open source translation system<br>Tradition meets innovation</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    <li><a href="data-deletion.html">Data Deletion</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="mailto:salinbanwa@gmail.com">salinbanwa@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Salinbanwa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="deletion-form.js"></script>
+</body>
+</html>
